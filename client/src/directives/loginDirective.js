@@ -13,3 +13,27 @@ mainModule.directive('login', function(){
     }
 });
 
+
+mainModule.directive('bfFieldError', function ($compile) {
+   return {
+       restrict: 'A',
+       require: 'ngModel',
+       link: function(scope, element, attrs, ngModel) {
+           var subScope = scope.$new(true);
+
+           subScope.hasError = function () {
+               return ngModel.$invalid && ngModel.$dirty;
+           };
+
+           subScope.errors = function () {
+               return ngModel.$error;
+           };
+
+           var html = $compile('<ul ng-if="hasError()">{{ errors() }}</ul>')(subScope);
+
+           element.after(html);
+
+       }
+   }
+});
+

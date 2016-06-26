@@ -56,9 +56,9 @@ gulp.task('watch', function(){
           gulp.run('sass')
       });
 
-    gulp.watch('src/css/*.css', function(event){
-        gulp.run('css');
-    });
+    //gulp.watch('src/css/*.css', function(event){
+    //    gulp.run('css');
+    //});
     //gulp.watch('src/css/*.css', function(event){
     //    gulp.run('css');
     //});
@@ -73,4 +73,4 @@ gulp.task('clean', function(){
 });
 
 
-gulp.task('default', ['sass', 'js', 'css', 'move', 'images']);
+gulp.task('default', ['sass', 'watch']);
