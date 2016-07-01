@@ -3,20 +3,41 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>小车匠</title>
-    <link rel="stylesheet" href="framework/bootstrap.min.css"/>
+    <link rel="stylesheet" href="framework/bootstrap/dist/css/bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="framework/sb-admin-2.css"/>
+    <link rel="stylesheet" href="framework/timeline.css"/>
+    <link href="framework/morrisjs/morris.css" rel="stylesheet">
+
+    <link href="framework/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+    <link href="framework/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="framework/zTreeStyle.css"/>
+    <link rel="stylesheet" href="framework/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css"/>
 </head>
 <body ng-app="mainModule">
 <div ui-view></div>
 
-<script src="framework/jquery-2.1.3.min.js"></script>
+<script src="framework/jquery/dist/jquery.min.js"></script>
 <script src="framework/angular1.2.13.js"></script>
 <script src="framework/angular-ui-router.js"></script>
-<script src="framework/bootstrap.min.js"></script>
+<script src="framework/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="framework/metisMenu/dist/metisMenu.min.js"></script>
+<script src="framework/jquery.ztree.all-3.5.min.js"></script>
+<script src="framework/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script src="framework/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<!--<script src="framework/raphael/raphael-min.js"></script>-->
+<!--<script src="framework/morrisjs/morris.js"></script>-->
+<!--<script src="framework/morris-data.js"></script>-->
 <script src="index.js"></script>
 <script src="services/httpService.js"></script>
 <script src="controllers/loginController.js"></script>
 <script  src="config/router.js"></script>
+<script src="controllers/homeController.js"></script>
 <script src="controllers/userController.js"></script>
 <script src="directives/loginDirective.js"></script>
+<script src="directives/homeComponent.js"></script>
+<script src="directives/tableDirective.js"></script>
+<script src="controllers/taskController.js"></script>
+<script src="directives/formDirective.js"></script>
 </body>
 </html>

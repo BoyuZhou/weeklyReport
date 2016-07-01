@@ -1,0 +1,74 @@
+<!--<div class="container-fluid">-->
+    <!--<div class="row">-->
+      <!--<div class="col-lg-4 col-lg-offset-6">-->
+          <!--<form name="form" ng-submit="vm.submit(vm.form)" novalidate="novalidate">-->
+              <!--<div class="form-group">-->
+                  <!--<label for="username">用户名：</label>-->
+                  <!--<input-->
+                          <!--class="form-control"-->
+                          <!--type="text"-->
+                          <!--id="username"-->
+                          <!--name="username"-->
+                          <!--placeholder="请输入用户名"-->
+                          <!--ng-maxlength="20"-->
+                          <!--ng-model="vm.form.username"-->
+                          <!--/>-->
+              <!--</div>-->
+              <!--<div class="form-group">-->
+                  <!--<label for="password">密码：</label>-->
+                  <!--<input-->
+                          <!--class="form-control"-->
+                          <!--type="password"-->
+                          <!--id="password"-->
+                          <!--name="password"-->
+                          <!--placeholder="请输入密码"-->
+                          <!--ng-maxlength="20"-->
+                          <!--ng-model="vm.form.password"-->
+                          <!--/>-->
+              <!--</div>-->
+              <!--<div>-->
+                  <!--<button type="submit" ng-click="vm.go()" class="btn btn-default">登陆</button>-->
+              <!--</div>-->
+          <!--</form>-->
+      <!--</div>-->
+
+    <!--</div>-->
+<!--</div>-->
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+       <div><img style="float: left;margin-top: 10px" src="images/logo.png" alt=""/><a class="navbar-brand">账号登陆</a></div>
+    </div>
+    </nav>
+<div class="container" style="width: 100%;height: 490px;background: url('images/bmw.jpg')no-repeat;background-size: cover">
+    <div style="height: 100%">
+        <div class="row">
+            <div class="col-md-3 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">请登录</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" name="form" ng-submit="vm.submit(vm.form)" >
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="用户名" name="username" type="text" autofocus ng-model="vm.form.username">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="密码" name="password" type="password" value="" ng-model="vm.form.password">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me">记住我
+                                    </label>
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <button type="submit" ng-click="vm.go()" class="btn btn-lg btn-info btn-block">提交</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="row" style="position: relative;bottom: 1px;height: 10px;width: 100%"></div>
+</div>

@@ -3,10 +3,9 @@
  */
 mainModule.controller('loginController', ['$scope', 'data', '$state', function($scope, data, $state){
     var vm = this;
-    console.dir($scope);
-    vm.go = function () {
-        console.log(111);
+    vm.submit = function () {
         $state.go('home.user');
     }
+
 
 }]);

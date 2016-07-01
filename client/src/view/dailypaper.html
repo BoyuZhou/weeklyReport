@@ -1,0 +1,75 @@
+<div home-header title="日报管理">
+</div>
+<div class="row">
+    <div class="col-lg-6 col-lg-offset-2">
+        <div class="form-group">
+            <label for="dtp_input1" class=" control-label ">日期</label>
+            <div class="input-group date form_datetime" data-date="2016-06-30T09:00:00Z" data-date-format="yyyy MM dd - HH:ii p" data-link-field="dtp_input1">
+                <input class="form-control" size="16" type="text" value="">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+            </div>
+            <input type="hidden" id="dtp_input1" value="" /><br/>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="form-group col-lg-3 col-lg-offset-2">
+        <label>任务名称</label>
+        <div class="input-group">
+            <input type="text" class="form-control" aria-label="...">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">任务 <span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a>SBT</a></li>
+                    <li><a>变速箱</a></li>
+                    <li><a>发动机</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a>关联的任务</a></li>
+                </ul>
+            </div><!-- /btn-group -->
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+    <div class="form-group col-lg-2 col-lg-offset-1">
+        <label>工时</label>
+        <input class="form-control">
+    </div>
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+    <div class="form-group col-lg-6 col-lg-offset-2">
+        <label>任务描述</label>
+        <input class="form-control">
+    </div>
+</div>
+<div class="row">
+    <div class="form-group col-lg-6 col-lg-offset-2">
+        <label>计划完成度</label>
+        <input type="range" min="0" max="100" defaultValue="0">
+    </div>
+</div>
+<div class="row">
+    <div class="form-group col-lg-6 col-lg-offset-2">
+        <label>实际完成度</label>
+        <input type="range">
+    </div>
+</div>
+<div class="row">
+    <div class="form-group col-lg-6 col-lg-offset-2">
+        <label>交付产物</label>
+        <input class="form-control">
+    </div>
+</div>
+<div class="row">
+    <div class="form-group col-lg-6 col-lg-offset-2">
+        <label>备注</label>
+        <textarea class="form-control" rows="3"></textarea>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-2 col-lg-offset-4">
+        <button type="submit" ng-click="" class="btn btn-lg btn-info btn-block">提交</button>
+    </div>
+</div>
