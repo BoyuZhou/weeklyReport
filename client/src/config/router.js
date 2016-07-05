@@ -9,16 +9,20 @@ mainModule.config(function($stateProvider, $urlRouterProvider){
         }
     )
         .state('home', {
-        url: '/home',
-        templateUrl: 'view/home.html',
+            url: '/home',
+            templateUrl: 'view/home.html',
             controller: 'homeController as vm',
-        abstract: true
+            abstract: true
     })
-        .state('home.user', {
-        url: '/user',
-        templateUrl: 'view/user.html',
-        controller: 'userController as vm'
+        .state('home.userpage', {
+            url: '/userpage',
+            templateUrl: 'view/user.html',
+            controller: 'userController as vm'
     })
+        .state('home.userpage.add', {
+            url: '/add',
+            templateUrl: 'view/promp/details.html'
+        })
         .state('home.personage', {
             url: '/personage',
             templateUrl: 'view/personage.html'
@@ -29,7 +33,8 @@ mainModule.config(function($stateProvider, $urlRouterProvider){
         })
         .state('home.limit', {
             url: '/limit',
-            templateUrl: 'view/limit.html'
+            templateUrl: 'view/limit.html',
+            controller: 'limitController as vm'
         })
         .state('home.department', {
             url: '/department',
@@ -67,7 +72,14 @@ mainModule.config(function($stateProvider, $urlRouterProvider){
             url: '/addteam',
             templateUrl: 'view/addTeam.html'
         })
-
+        .state('home.user', {
+            url: '/user',
+            templateUrl: 'view/userpage.html'
+        })
+        .state('home.personal', {
+            url: '/personal',
+            templateUrl: 'view/personal.html'
+        })
         .state('notFound', {
         url: '/notFound ',
         templateUrl: 'view/notFound.html'

@@ -27,30 +27,55 @@ mainModule.directive('homeHeader', function ($compile) {
     }
 });
 
-mainModule.directive('xcjPromp', function ($timeout) {
+mainModule.directive('xcjPromp', function ($timeout, $rootScope) {
     return {
         redirect: 'EA',
-        transclude: true,
-        replace: true,
-        controller: 'homeController',
         link: function (scope, element, attrs) {
-            scope.$watch('vm.promp', function(newVal) {
-                console.log(newVal);
+            console.log($rootScope);
+            scope.$watch(function(){
+                return $rootScope.promp;
+                }, function(newVal) {
                 if(newVal){
                     $timeout(function () {
                         var top = $('#promp').css('height');
                         var left = $('#promp').css('width');
                         $('#promp').css({'margin-top':"-" + parseInt(top)/2 +'px', 'margin-left':"-" + parseInt(left)/2 +'px'});
-                    });
+                    },100);
                 }
             });
+            scope.closePromp = function () {
+                $rootScope.promp = false;
+            }
 
         },
-        template:'<div style="position: absolute;top: 50%; left: 50%;border: 1px solid gainsboro;border-radius: 5px;background: #fff;z-index: 6" id="promp">\
-        <div ng-click="vm.closePromp()"><span class="glyphicon glyphicon-remove" style="position: absolute; right: 10px;top: 10px;"></span></div>\
-        <div style="width: 100%;height: 40px;background: gainsboro;border-bottom: 1px solid gainsboro;"></div>\
-                 <div id="clude" class="row" ng-transclude>\
+        template:'<div class="container" style="position: absolute;top: 50%; left: 50%;border: 1px solid gainsboro;border-radius: 5px;background: #fff;z-index: 6;max-width: 500px" id="promp">\
+        <div ng-click="closePromp()"><span class="glyphicon glyphicon-remove" style="position: absolute; right: 10px;top: 10px;z-index: 10;"></span></div>\
+        <div style="position:relative;left:-15px;width: 106.5%;height: 40px;background: gainsboro;border-bottom: 1px solid gainsboro;"></div>\
+                 <div id="clude" class="row" style="padding: 5px" ui-view>\
                  </div>\
                  </div>'
     }
+});
+
+mainModule.directive('choiceUser', function () {
+   return {
+       restrict: 'EA',
+       replace: true,
+       scope: {
+         data: '='
+       },
+       link: function(scope, element, attrs){
+
+       },
+       template: '<div class="row">\
+                   <div class="col-lg-12">\
+    <div class="form-group">\
+    <label ng-bind="data.label"></label>\
+    <select  class="form-control">\
+    <option ng-repeat="item in data.select">{{ item }}</option>\
+    </select>\
+    </div>\
+    </div>\
+    </div>'
+   }
 });

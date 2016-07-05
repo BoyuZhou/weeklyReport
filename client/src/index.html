@@ -11,8 +11,9 @@
 
     <link href="framework/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
     <link href="framework/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="framework/zTreeStyle.css"/>
+    <link rel="stylesheet" href="framework/zTree_v3/css/zTreeStyle/zTreeStyle.css"/>
     <link rel="stylesheet" href="framework/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css"/>
+    <link rel="stylesheet" href="css/layout.css"/>
 </head>
 <body ng-app="mainModule">
 <div ui-view></div>
@@ -22,22 +23,31 @@
 <script src="framework/angular-ui-router.js"></script>
 <script src="framework/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="framework/metisMenu/dist/metisMenu.min.js"></script>
-<script src="framework/jquery.ztree.all-3.5.min.js"></script>
+<script src="framework/zTree_v3/js/jquery.ztree.core.min.js"></script>
+<script src="framework/zTree_v3/js/jquery.ztree.excheck.min.js"></script>
+<script src="framework/zTree_v3/js/jquery.ztree.exedit.min.js"></script>
 <script src="framework/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
 <script src="framework/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
 <!--<script src="framework/raphael/raphael-min.js"></script>-->
 <!--<script src="framework/morrisjs/morris.js"></script>-->
 <!--<script src="framework/morris-data.js"></script>-->
-<script src="index.js"></script>
+<script src="config/index.js"></script>
+<script src="services/mainService.js"></script>
 <script src="services/httpService.js"></script>
+<script src="services/userFactory.js"></script>
 <script src="controllers/loginController.js"></script>
 <script  src="config/router.js"></script>
 <script src="controllers/homeController.js"></script>
 <script src="controllers/userController.js"></script>
+<script src="controllers/limitController.js"></script>
 <script src="directives/loginDirective.js"></script>
 <script src="directives/homeComponent.js"></script>
 <script src="directives/tableDirective.js"></script>
 <script src="controllers/taskController.js"></script>
+<script src="filters/userFilters.js"></script>
 <script src="directives/formDirective.js"></script>
+<script src="directives/tree2Directive.js"></script>
+<script src="directives/userDirective.js"></script>
+
 </body>
 </html>

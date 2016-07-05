@@ -1,19 +1,7 @@
-mainModule.controller('homeController', ['$scope', '$state', '$compile', function ($scope, $state, $compile) {
+mainModule.controller('homeController', ['$scope', '$state', '$compile', 'mainService', '$rootScope', function ($scope, $state, $compile, mainService, $rootScope) {
     var vm = this;
-    vm.promp = false;
-    vm.data = {
-        title: '权限分组表',
-        thead: ['编号', '分组名称', '分组描述', '用户列表', '操作'],
-        tbody: [
-            ['1', '管理员', '管理员', '切克闹'],
-            ['2', '管理员', '管理员', '切克闹'],
-            ['3', '管理员', '管理员', '切克闹'],
-            ['4', '管理员', '管理员', '切克闹'],
-            ['5', '管理员', '管理员', '切克闹']
-    //'1111', '22222', '333333', '4444'
-           ],
-        control: true
-    };
+    $rootScope.promp = false;
+
     vm.users = {
         title: '用户列表',
         thead: ['ID', '姓名', '用户名', '邮箱', '电话', '访问次数', '操作'],
@@ -87,28 +75,7 @@ mainModule.controller('homeController', ['$scope', '$state', '$compile', functio
         ]
     };
 
-    vm.userform = {
-      form1 : {
-          label: '用户名',
-          type: 'text'
-      },
-        form2 : {
-            label: '姓名',
-            type: 'text'
-        },
-        form3 : {
-            label: '邮箱',
-            type: 'text'
-        },
-        form4 : {
-            label: '电话',
-            type: 'text'
-        },
-        form5 : {
-            label: '职位',
-            type: 'text'
-        }
-    };
+
     vm.teamform = {
         form1 : {
             label: '团队名称',
@@ -129,16 +96,80 @@ mainModule.controller('homeController', ['$scope', '$state', '$compile', functio
             type: 'text'
         }
     };
+
+    vm.usertasks = {
+        title: '我的任务',
+        thead: ['任务编号', '任务名称', '任务描述', '重要系数', '任务状态', '截止日期', '操作'],
+        tbody: [
+            ['001', 'sbt', '威朗项目', '3', '未完成', '2016-06-30', '查看'],
+            ['002', 'sbt', '威朗项目', '3', '未完成', '2016-06-30', '查看'],
+            ['003', 'sbt', '威朗项目', '3', '未完成', '2016-06-30', '查看'],
+            ['004', 'sbt', '威朗项目', '3', '未完成', '2016-06-30', '查看'],
+            ['005', 'sbt', '威朗项目', '3', '未完成', '2016-06-30', '查看'],
+            ['006', 'sbt', '威朗项目', '3', '未完成', '2016-06-30', '查看']
+
+        ],
+        control: false,
+        page: false
+    };
+
+    vm.usereport = {
+        title: '我的日报',
+        thead: ['日期', '任务', '完成度', '备注', '操作'],
+        tbody: [
+            ['2016-06-30', 'sbt', '50%', '', '查看'],
+            ['2016-06-29', 'sbt', '50%', '', '查看'],
+            ['2016-06-28', 'sbt', '50%', '', '查看'],
+            ['2016-06-27', 'sbt', '50%', '', '查看'],
+            ['2016-06-26', 'sbt', '50%', '', '查看'],
+            ['2016-06-25', 'sbt', '50%', '', '查看']
+        ],
+        control: false
+    };
+
+    vm.dynamic = {
+        title: '最新动态',
+        thead: ['日期', '事件'],
+        tbody: [
+            ['2016-06-30 11：24', 'xxx发布了任务'],
+            ['2016-06-29 11：24', 'xxx发送了周报'],
+            ['2016-06-28 11：24', 'xxx发送了周报'],
+            ['2016-06-27 11：24', 'xxx发送了周报'],
+            ['2016-06-26 11：24', 'xxx发送了周报'],
+            ['2016-06-25 11：24', 'xxx发送了周报'],
+            ['2016-06-29 11：24', 'xxx发送了周报'],
+            ['2016-06-28 11：24', 'xxx发送了周报'],
+            ['2016-06-27 11：24', 'xxx发送了周报'],
+            ['2016-06-26 11：24', 'xxx发送了周报'],
+            ['2016-06-25 11：24', 'xxx发送了周报']
+        ],
+        control: false
+    };
+    vm.personal = {
+        title: '我的档案',
+        thead: [],
+        tbody: [
+            ['用户名', 'zhouboyu'],
+            ['真实姓名', '周博宇'],
+            ['所属部门', '平台部'],
+            ['职位', '前端开发'],
+            ['权限', '研发'],
+            ['邮箱', 'zby@xcj.com'],
+            ['加入日期', '016-06-28'],
+            ['最后登陆', '016-06-28'],
+            ['访问次数', '1']
+        ],
+        control: false
+    };
+
     $('#side-menu').metisMenu();
 
     vm.changePassword = function () {
         var html = '<div class="form-group col-lg-10 col-lg-offset-1"><label>新密码</label><input class="form-control"> </div><div class="form-group col-lg-10 col-lg-offset-1"><label>再次输入</label><input class="form-control"></div>';
-        vm.promp = true;
-        $('#clude').html($compile(html));
+        vm.mainService.promp = true;
+        $('#clude').html($compile(html)($scope));
 
     };
-    vm.closePromp = function () {
-        vm.promp = false;
-    }
+
 
 }]);

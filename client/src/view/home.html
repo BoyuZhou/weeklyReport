@@ -124,7 +124,7 @@
                         <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a><i class="fa fa-user fa-fw"></i> 个人信息</a>
+                        <li><a ui-sref="home.personal"><i class="fa fa-user fa-fw"></i> 个人信息</a>
                         </li>
                         <li ng-click="vm.changePassword()"><a><i class="fa fa-gear fa-fw"></i> 修改密码</a>
                         </li>
@@ -146,38 +146,22 @@
                                     <!--<span class="glyphicon glyphicon-th-list center" aria-hidden="true"></span>-->
                             <!--</a></li>-->
                         <li>
-                            <a ui-sref="home.user"><i class="fa fa-dashboard fa-fw"></i> 用户管理<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a ui-sref="home.personage">用户</a>
-                                </li>
-                                <li>
-                                    <a ui-sref="home.team">团队</a>
-                                </li>
-                                <li>
-                                    <a ui-sref="home.department">部门</a>
-                                </li>
-                            </ul>
+                            <a ui-sref="home.userpage"><i class="fa fa-dashboard fa-fw"></i> 用户管理</a>
                         </li>
                         <li>
                             <a ui-sref="home.limit"><i class="fa fa-bar-chart-o fa-fw"></i> 权限管理</a>
                         </li>
                         <li>
-                            <a ui-sref="home.task"><i class="fa fa-table fa-fw"></i> 任务<span class="fa arrow"></span></a>
+                            <a ui-sref="home.task"><i class="fa fa-table fa-fw"></i> 工作台<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a ui-sref="home.writetask">新增任务</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a ui-sref="forms.html"><i class="fa fa-edit fa-fw"></i> 日报<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a ui-sref="home.dailypaper">编写日报</a>
+                                    <a ui-sref="home.writetask">个人工作台</a>
                                 </li>
                                 <li>
-                                    <a ui-sref="home.querydailypaper">查询日报</a>
+                                    <a ui-sref="home.writetask">团队日报</a>
+                                </li>
+                                <li>
+                                    <a ui-sref="home.writetask">团队周报</a>
                                 </li>
                             </ul>
                         </li>
@@ -188,12 +172,10 @@
             <!-- /.navbar-static-side -->
         </nav>
 
-        <div id="page-wrapper" style="min-height: 703px;" ui-view>
+        <div id="page-wrapper" style="min-height: 650px;" ui-view>
 
         </div>
         <!-- /#page-wrapper -->
 
     </div>
     <!--<div ></div>-->
-    <div xcj-promp ng-show="vm.promp">
-    </div>

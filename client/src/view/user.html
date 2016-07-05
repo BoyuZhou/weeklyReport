@@ -1,13 +1,38 @@
 <div home-header title="用户管理"  include="true"></div>
 <div class="row">
-    <div class="col-lg-4">
-          <div>
-              <ul id="treeDemo" class="ztree"></ul>
-          </div>
-    </div>
-    <div class="col-lg-3" style="position: fixed; top: 128px;left: 800px;">
-        <div xcj-table data="vm.user">
-            <span><span class="fa fa-gear"></span>修改资料</span>
+    <div class="col-lg-3">
+        <div class="row">
+            <ul class="xcj-tree">
+                <li>
+                    <div class="pointer"><span class="icon"></span>{{ vm.structure.root}} <div class="control"><span class="fa fa-plus-circle" title="添加部门"></span><span class="fa fa-wrench" title="修改"></span><span class="fa  fa-ban" title="禁用"></span></div></div>
+                    <ul>
+                        <li ng-repeat="item in  vm.structure.departments">
+                            <div><span class="icon"></span>{{ item.name }}<div class="control"><span class="fa fa-plus-circle" title="添加团队"></span><span class="fa fa-wrench" title="修改"></span><span class="fa  fa-ban" title="禁用"></span></div></div>
+                            <ul>
+                                <li ng-repeat=" b in item.teams">
+                                    <div><span class="icon"></span>{{ b }}<div class="control"><span class="fa fa-wrench" title="修改"></span><span class="fa  fa-ban" title="禁用"></span></div></div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
+    <div class="col-lg-9">
+        <div class="row" >
+            <div class="col-lg-12" style="">
+                <div xcj-table data="vm.users">
+                    <span class="pointer"><span class="fa fa-plus"></span><span add-user>增加用户</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="col-lg-2 col-lg-offset-7">-->
+        <!--<ul class="nav">-->
+            <!--<li><span style="display: inline-block;position: relative;top: 4px;width: 20px;height: 20px;background-color: #f2dede"></span>停用</li>-->
+        <!--</ul>-->
+    <!--</div>-->
 </div>
+<div ng-show="promp" xcj-promp></div>
