@@ -8,7 +8,7 @@ mainModule.factory('userFactory', function(){
         }
     };
     //添加用户
-    var addUser = function (user) {
+    var addUser = function () {
 
     };
 

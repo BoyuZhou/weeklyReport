@@ -1,6 +1,8 @@
-mainModule.controller('homeController', ['$scope', '$state', '$compile', 'mainService', '$rootScope', function ($scope, $state, $compile, mainService, $rootScope) {
+mainModule.controller('homeController', ['$scope', '$state', '$compile', 'mainService', '$rootScope', 'treeService', function ($scope, $state, $compile, mainService, $rootScope, treeService) {
     var vm = this;
-    $rootScope.promp = false;
+    //$rootScope.promp = false;
+    vm.mainService = mainService;
+
 
     vm.users = {
         title: '用户列表',

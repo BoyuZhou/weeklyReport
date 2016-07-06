@@ -1,30 +1,21 @@
-mainModule.controller('userController', ['$scope', 'userFactory', function($scope, userFactory){
+mainModule.controller('userController', ['$scope', 'userService', 'treeService', '$state', function($scope, userService, treeService, $state){
     var vm = this;
 
-    vm.users = userFactory.users;
+    vm.promp = false;
 
-    vm.addUser = function (user) {
+    vm.users = userService.users;
 
-      userFactory.addUser(user);
-        console.log($scope.$parent);
+    vm.addUser = function () {
+        console.log(11);
+        $state.go('home.userpage.add');
+       vm.promp = true;
+
+      //userFactory.addUser(user);
+      //  console.log($scope.$parent);
     };
-    vm.structure = {
-        root: '小车匠',
-        departments: [
-             {
-                name: '技术部',
-                teams: [ '前端团队', 'java团队', '测试团队'
 
-                ]
+    vm.structure = treeService.tree;
 
-                },
-            {
-                name: '策划部',
-                teams:['策划团队', '销售团队']
-            }
-
-        ]
-    };
 
 
     //vm.user = {

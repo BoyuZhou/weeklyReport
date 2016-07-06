@@ -3,7 +3,7 @@
         <div class="panel panel-default">
             <div class="panel-heading" ng-if="data.title">
                 {{ data.title }}
-                <div style="display: inline-block;position: absolute;right: 45px" ng-transclude></div>
+                <div style="display: inline-block;position: absolute;right: 45px"><span class="pointer" ng-click="data.addUser()"><span class="fa fa-plus"></span><span>添加</span></span></div>
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
@@ -18,11 +18,11 @@
                         <tr ng-repeat="b in data.tbody">
                             <td  ng-repeat="c in b track by $index">{{ c }}</td>
                             <td ng-show="data.control">
-                                <span ng-if="data.get" ng-click="getInfo()" class="fa fa-eye" title="查看"></span>
-                                <span ng-if="data.change" ng-click="changeInfo()" class="fa fa-edit" title="修改"></span>
-                                <span ng-if="data.group" ng-click="getGroup()" class="fa fa-users" title="成员"></span>
-                                <span ng-if="data.limit" ng-click="getLimit()" class="fa fa-th-list" title="权限"></span>
-                                <span ng-if="data.stop" ng-click="stop($event.target)" class="fa fa-power-off" title="停用"></span>
+                                <span ng-if="data.get" ng-click="data.viewInfo()" class="fa fa-eye" title="查看"></span>
+                                <span ng-if="data.change" ng-click="data.changeInfo()" class="fa fa-edit" title="修改"></span>
+                                <span ng-if="data.group" ng-click="data.getGroup()" class="fa fa-users" title="成员"></span>
+                                <span ng-if="data.limit" ng-click="data.getLimit()" class="fa fa-th-list" title="权限"></span>
+                                <span ng-if="data.stop" ng-click="data.stop($event.target)" class="fa fa-power-off" title="停用"></span>
                             </td>
                         </tr>
 

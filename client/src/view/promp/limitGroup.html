@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-sm-4">
+        <ul class="xcj-tree" style="margin-left: 0;; border-right:1px solid gainsboro">
+            <li>
+                <div class="pointer state"><span class="icon"></span><div>{{ vm.mainService.limitGroup.tree.root.name }}</div></div>
+                <ul ng-show="vm.mainService.limitGroup.tree.root.state">
+                    <li ng-repeat="item in  vm.mainService.limitGroup.tree.departments track by $index">
+                        <div class="state"><span class="icon"></span><div>{{ item.name }}</div></div>
+                        <ul ng-show="item.state">
+                            <li ng-repeat=" b in item.teams track by $index">
+                                <div class="state"><span class="icon"></span><div>{{ b }}</div></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="col-sm-8">
+        <div>
+            <ul style="margin: 20px 10px">
+                <li style="float:left; margin-left: 10px" ng-repeat=" item in vm.mainService.limitGroup.users track by $index">
+                    <input type="checkbox"/>
+                    {{ item }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

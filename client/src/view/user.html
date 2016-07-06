@@ -4,13 +4,13 @@
         <div class="row">
             <ul class="xcj-tree">
                 <li>
-                    <div class="pointer"><span class="icon"></span>{{ vm.structure.root}} <div class="control"><span class="fa fa-plus-circle" title="添加部门"></span><span class="fa fa-wrench" title="修改"></span><span class="fa  fa-ban" title="禁用"></span></div></div>
-                    <ul>
-                        <li ng-repeat="item in  vm.structure.departments">
-                            <div><span class="icon"></span>{{ item.name }}<div class="control"><span class="fa fa-plus-circle" title="添加团队"></span><span class="fa fa-wrench" title="修改"></span><span class="fa  fa-ban" title="禁用"></span></div></div>
-                            <ul>
-                                <li ng-repeat=" b in item.teams">
-                                    <div><span class="icon"></span>{{ b }}<div class="control"><span class="fa fa-wrench" title="修改"></span><span class="fa  fa-ban" title="禁用"></span></div></div>
+                    <div class="pointer state" ng-dblclick="vm.structure.stateChange(vm.structure.root, $event.target)" change-state="true"><span class="icon"></span><div>{{ vm.structure.root.name }}</div> <span class="control"><span class="fa fa-plus-circle" title="添加部门" ng-click="vm.structure.addNode(vm.structure.departments)"></span><span class="fa fa-wrench" title="修改" ng-click="vm.structure.changeName($event.target)"></span><span class="fa  fa-ban" title="禁用" ng-click="vm.structure.forbidden($event.target)"></span></span></div>
+                    <ul ng-show="vm.structure.root.state">
+                        <li ng-repeat="item in  vm.structure.departments track by $index">
+                            <div class="state" ng-dblclick="vm.structure.stateChange(item, $event.target)" change-state="true"><span class="icon"></span><div>{{ item.name }}</div><span class="control"><span class="fa fa-plus-circle" title="添加团队" ng-click="vm.structure.addNode(item.teams)"></span><span class="fa fa-wrench" title="修改" ng-click="vm.structure.changeName($event.target)"></span><span class="fa  fa-ban" title="禁用"  ng-click="vm.structure.forbidden($event.target)"></span></span></div>
+                            <ul ng-show="item.state">
+                                <li ng-repeat=" b in item.teams track by $index">
+                                    <div class="state" change-state="true"><span class="icon"></span><div>{{ b }}</div><span class="control"><span class="fa fa-wrench" title="修改" ng-click="vm.structure.changeName($event.target)"></span><span class="fa  fa-ban" title="禁用" ng-click="vm.structure.forbidden($event.target)"></span></span></div>
                                 </li>
                             </ul>
                         </li>
@@ -23,7 +23,6 @@
         <div class="row" >
             <div class="col-lg-12" style="">
                 <div xcj-table data="vm.users">
-                    <span class="pointer"><span class="fa fa-plus"></span><span add-user>增加用户</span></span>
                 </div>
             </div>
         </div>
@@ -35,4 +34,4 @@
         <!--</ul>-->
     <!--</div>-->
 </div>
-<div ng-show="promp" xcj-promp></div>
+

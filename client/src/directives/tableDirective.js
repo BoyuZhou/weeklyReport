@@ -2,11 +2,11 @@ mainModule.directive('xcjTable', function (mainService, $compile, $rootScope) {
     return {
        redirect: 'EA',
         replace: true,
-        transclude: true,
         scope: {
           data: '='
         },
         link: function (scope, element, attrs) {
+            console.log(scope);
             //是否显示控制项
              scope.data.control = scope.data.control || false;
             //是否显示分页标签
@@ -24,11 +24,6 @@ mainModule.directive('xcjTable', function (mainService, $compile, $rootScope) {
 
             //停用方法
             scope.stop = function (e) {
-                if($(e).parent().parent().hasClass('danger')){
-                    $(e).parent().parent().removeClass('danger');
-                }else{
-                    $(e).parent().parent().addClass('danger');
-                }
 
             };
 

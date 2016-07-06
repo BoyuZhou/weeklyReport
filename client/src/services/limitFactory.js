@@ -1,3 +1,0 @@
-mainModule.factory('limitFactory', function () {
-
-});

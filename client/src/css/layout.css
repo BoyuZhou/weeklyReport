@@ -3,13 +3,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .ztree li span.button.add {margin-left:2px; margin-right: -1px; background-position:-144px 0; vertical-align:top; *vertical-align:middle}
 
+body{
+    -webkit-user-select: none;
+}
 ul,li{
     list-style: none;
 }
 .pointer{
     cursor: pointer;
 }
-
+.xcj-tree{
+    margin-left: 20px;
+}
 .xcj-tree ul{
     margin: 5px 20px;
 }
@@ -22,6 +27,10 @@ ul,li{
     display: inline-block;
     width: 16px;
     height: 16px;
+    background: url("../images/1_close.png")no-repeat;
+}
+
+.xcj-tree .forbidden{
     background: url("../images/1_open.png")no-repeat;
 }
 .xcj-tree .control{
@@ -31,4 +40,37 @@ ul,li{
 .xcj-tree .control span{
     display: inline-block;
     margin: auto 2px;
+}
+.state div{
+    display: inline-block;
+}
+.promp{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    max-width: 500px;
+    margin-left:-250px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    background: #fff;
+    z-index: 6;
+}
+.schedule{
+    margin-top: 23px;
+    width: 100%;
+    height: 363px;
+
+}
+.schedule li {
+    width: 100%;
+    height: 33px;
+    border: 1px solid gainsboro;
+    text-align: center;
+    line-height: 33px;
+}
+.data-tag{
+    margin-top: 10px;
+}
+.data-tag li a{
+    padding: 5px 5px ;
 }

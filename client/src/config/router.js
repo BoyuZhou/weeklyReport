@@ -6,79 +6,45 @@ mainModule.config(function($stateProvider, $urlRouterProvider){
             url: '/login',
             templateUrl: 'view/login.html',
             controller: 'loginController as vm'
-        }
-    )
+        })
         .state('home', {
             url: '/home',
             templateUrl: 'view/home.html',
             controller: 'homeController as vm',
             abstract: true
-    })
-        .state('home.userpage', {
-            url: '/userpage',
+        })
+        .state('home.user', {
+            url: '/user',
             templateUrl: 'view/user.html',
             controller: 'userController as vm'
-    })
-        .state('home.userpage.add', {
-            url: '/add',
-            templateUrl: 'view/promp/details.html'
-        })
-        .state('home.personage', {
-            url: '/personage',
-            templateUrl: 'view/personage.html'
-        })
-        .state('home.team', {
-            url: '/team',
-            templateUrl: 'view/team.html'
         })
         .state('home.limit', {
             url: '/limit',
             templateUrl: 'view/limit.html',
             controller: 'limitController as vm'
         })
-        .state('home.department', {
-            url: '/department',
-            templateUrl: 'view/department.html'
-        })
-        .state('home.querydailypaper', {
-            url: '/querydailypaper',
-            templateUrl: 'view/querydailypaper.html'
-        })
-        .state('home.dailypaper', {
-            url: '/dailypaper',
-            templateUrl: 'view/dailypaper.html'
-        })
-        .state('home.task', {
-            url: '/task',
-            templateUrl: 'view/task.html'
-        })
-        .state('home.writetask', {
-            url: '/writetask',
-            templateUrl: 'view/writetask.html',
-            controller: 'taskController as vm'
-        })
         .state('home.personaldata', {
             url: '/personaldata',
             templateUrl: 'view/personaldata.html'
         })
-        .state('home.adduser', {
-            url: '/adduser',
-            templateUrl: 'view/addUser.html'
-        })
-        .state('home.adddepartment', {
-            url: '/adddepartment',
-            templateUrl: 'view/addDepartment.html'
-        }).state('home.addteam', {
-            url: '/addteam',
-            templateUrl: 'view/addTeam.html'
-        })
-        .state('home.user', {
-            url: '/user',
-            templateUrl: 'view/userpage.html'
-        })
         .state('home.personal', {
             url: '/personal',
             templateUrl: 'view/personal.html'
+        })
+        .state('home.workbench', {
+            url: '/workbench',
+            templateUrl: 'view/workbench.html',
+            controller: 'taskController as vm'
+        })
+        .state('home.teamDay', {
+            url: '/teamDay',
+            templateUrl: 'view/teamDay.html',
+            controller: 'taskController as vm'
+        })
+        .state('home.teamWeek', {
+            url: '/teamWeek',
+            templateUrl: 'view/teamWeek.html',
+            controller: 'taskController as vm'
         })
         .state('notFound', {
         url: '/notFound ',

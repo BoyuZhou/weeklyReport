@@ -30,28 +30,28 @@ mainModule.directive('homeHeader', function ($compile) {
 mainModule.directive('xcjPromp', function ($timeout, $rootScope) {
     return {
         redirect: 'EA',
+        controller: 'homeController',
         link: function (scope, element, attrs) {
-            console.log($rootScope);
-            scope.$watch(function(){
-                return $rootScope.promp;
-                }, function(newVal) {
-                if(newVal){
-                    $timeout(function () {
-                        var top = $('#promp').css('height');
-                        var left = $('#promp').css('width');
-                        $('#promp').css({'margin-top':"-" + parseInt(top)/2 +'px', 'margin-left':"-" + parseInt(left)/2 +'px'});
-                    },100);
-                }
-            });
+            console.log(scope);
+            //scope.$watch(function(){
+            //    return scope.vm.mainService.promp;
+            //    }, function(newVal) {
+            //    if(newVal){
+            //        //scope.tpl = scope.vm.mainService.prompSrc;
+            //        $timeout(function () {
+            //            var top = $('#promp').css('height');
+            //            var left = $('#promp').css('width');
+            //            $('#promp').css({'margin-top':"-" + parseInt(top)/2 +'px', 'margin-left':"-" + parseInt(left)/2 +'px'});
+            //        });
+            //    }
+            //});
             scope.closePromp = function () {
-                $rootScope.promp = false;
+                scope.vm.mainService.promp = false;
             }
-
         },
-        template:'<div class="container" style="position: absolute;top: 50%; left: 50%;border: 1px solid gainsboro;border-radius: 5px;background: #fff;z-index: 6;max-width: 500px" id="promp">\
+        template:'<div class="container promp"  id="promp">\
         <div ng-click="closePromp()"><span class="glyphicon glyphicon-remove" style="position: absolute; right: 10px;top: 10px;z-index: 10;"></span></div>\
-        <div style="position:relative;left:-15px;width: 106.5%;height: 40px;background: gainsboro;border-bottom: 1px solid gainsboro;"></div>\
-                 <div id="clude" class="row" style="padding: 5px" ui-view>\
+                 <div id="clude" class="row" style="padding: 5px" ng-include src="vm.mainService.prompSrc">\
                  </div>\
                  </div>'
     }
