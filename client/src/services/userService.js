@@ -1,4 +1,4 @@
-mainModule.service('userService', function(mainService) {
+mainModule.service('userService', function(mainService, $timeout) {
     this.users = {
         title: '成员列表',
         thead: ['ID', '姓名', '用户名', '邮箱', '操作'],
@@ -18,12 +18,15 @@ mainModule.service('userService', function(mainService) {
         classify: 'userControl'
     };
     this.users.addUser = function () {
-        mainService.promp = true;
-        mainService.prompSrc = 'view/promp/details.html'
+        mainService.prompSrc = 'view/promp/details.html';
+        $timeout(function() {
+            mainService.promp = true;
+        });
+
     };
 
     this.users.viewInfo = function () {
-        mainService.promp = true;
+
         mainService.userInfo = {
             tbody: [
                 ['用户名', 'zhouboyu'],
@@ -35,7 +38,10 @@ mainModule.service('userService', function(mainService) {
             ],
             control: false
         };
-        mainService.prompSrc = 'view/promp/userInfo.html'
+        mainService.prompSrc = 'view/promp/userInfo.html';
+        $timeout(function() {
+            mainService.promp = true;
+        });
 
     };
     this.users.stop = function(e){
@@ -46,7 +52,7 @@ mainModule.service('userService', function(mainService) {
         }
     };
     this.users.changeInfo = function(){
-        mainService.promp = true;
+
         mainService.changeInfo = {
             form1: {
                 id: 'username',
@@ -61,7 +67,10 @@ mainModule.service('userService', function(mainService) {
                 context: '周博宇'
             }
         };
-        mainService.prompSrc = 'view/promp/changeInfo.html'
+        mainService.prompSrc = 'view/promp/changeInfo.html';
+        $timeout(function() {
+            mainService.promp = true;
+        });
     }
 
 

@@ -6,12 +6,13 @@
     <file url="file://$PROJECT_DIR$/client/gulpfile.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/src/controllers/homeController.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/src/controllers/limitController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/src/controllers/taskController.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/src/controllers/userController.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/src/directives/homeComponent.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/src/directives/tableDirective.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/src/directives/tree2Directive.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/src/directives/userDirective.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/client/src/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/src/filters/taskFilter.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/src/services/limitService.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/src/services/mainService.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/src/services/treeService.js" charset="UTF-8" />

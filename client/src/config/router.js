@@ -46,6 +46,16 @@ mainModule.config(function($stateProvider, $urlRouterProvider){
             templateUrl: 'view/teamWeek.html',
             controller: 'taskController as vm'
         })
+        .state('home.modified', {
+            url: '/modified',
+            templateUrl: 'view/modified.html',
+            controller: 'taskController as vm'
+        })
+        .state('home.distribution', {
+            url: '/distribution',
+            templateUrl: 'view/distribution.html',
+            controller: 'allotController as vm'
+        })
         .state('notFound', {
         url: '/notFound ',
         templateUrl: 'view/notFound.html'

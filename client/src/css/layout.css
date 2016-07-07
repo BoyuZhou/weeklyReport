@@ -41,6 +41,9 @@ ul,li{
     display: inline-block;
     margin: auto 2px;
 }
+.xcj-tree div{
+    border: 1px solid #fff;
+}
 .state div{
     display: inline-block;
 }
@@ -74,3 +77,36 @@ ul,li{
 .data-tag li a{
     padding: 5px 5px ;
 }
+
+.float-left li{
+    float: left;
+    margin-left: 4px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.my-tab{
+    border-bottom: none;
+}
+.my-tab li a{
+    border: 1px solid #ddd;
+    background: #eee;
+    text-align: center;
+}
+.my-tab .my-tab-week{
+    width: 120px;
+}
+.my-tab .my-tab-day{
+    width: 100px;
+}
+
+
+
+
+.modified-table div{
+    display: inline-block;
+}
+.modified-table .intable-form{
+    width: 30px;
+}
+

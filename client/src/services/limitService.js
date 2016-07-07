@@ -1,4 +1,4 @@
-mainModule.service('limitService', function (mainService) {
+mainModule.service('limitService', function (mainService, $timeout) {
      this.data = {
          title: '权限分组表',
          thead: ['编号', '权限名称', '权限描述', "", '操作'],
@@ -39,7 +39,10 @@ mainModule.service('limitService', function (mainService) {
                 context: '管理员'
             }
         };
-        mainService.promp = true;
+        $timeout(function() {
+            mainService.promp = true;
+        });
+
     };
     this.data.viewInfo = function () {
         mainService.prompSrc = 'view/promp/limitInfo.html';
@@ -51,12 +54,16 @@ mainModule.service('limitService', function (mainService) {
             ],
             control: false
         };
-        mainService.promp = true;
+        $timeout(function() {
+            mainService.promp = true;
+        });
     };
     this.data.addUser = function () {
         mainService.prompSrc = 'view/promp/addLimit.html';
 
-        mainService.promp = true;
+        $timeout(function() {
+            mainService.promp = true;
+        });
     };
     this.data.getGroup = function () {
         mainService.prompSrc = 'view/promp/limitGroup.html';
@@ -84,7 +91,9 @@ mainModule.service('limitService', function (mainService) {
            users: ['周博宇', 'zhouboyu', '周博宇', 'zhouboyu', '周博宇', 'zhouboyu','周博宇', 'zhouboyu','周博宇', 'zhouboyu']
         };
         $('.promp').css({'max-width':'800px', marginLeft: '-400px'});
-        mainService.promp = true;
+        $timeout(function() {
+            mainService.promp = true;
+        });
     };
     this.data.getLimit = function () {
         mainService.prompSrc = 'view/promp/limit.html';
@@ -99,7 +108,9 @@ mainModule.service('limitService', function (mainService) {
             ]
         };
         $('.promp').css({'max-width':'800px', marginLeft: '-400px'});
-        mainService.promp = true;
+        $timeout(function() {
+            mainService.promp = true;
+        });
     };
 
 });

@@ -32,21 +32,18 @@ mainModule.directive('xcjPromp', function ($timeout, $rootScope) {
         redirect: 'EA',
         controller: 'homeController',
         link: function (scope, element, attrs) {
-            console.log(scope);
+            //console.log(scope);
             //scope.$watch(function(){
             //    return scope.vm.mainService.promp;
             //    }, function(newVal) {
             //    if(newVal){
             //        //scope.tpl = scope.vm.mainService.prompSrc;
-            //        $timeout(function () {
-            //            var top = $('#promp').css('height');
-            //            var left = $('#promp').css('width');
-            //            $('#promp').css({'margin-top':"-" + parseInt(top)/2 +'px', 'margin-left':"-" + parseInt(left)/2 +'px'});
-            //        });
+            //
             //    }
             //});
             scope.closePromp = function () {
                 scope.vm.mainService.promp = false;
+                $('.promp').css({'max-width':'500px', marginLeft: '-250px'});
             }
         },
         template:'<div class="container promp"  id="promp">\

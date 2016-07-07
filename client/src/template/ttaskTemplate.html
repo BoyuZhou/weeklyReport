@@ -1,0 +1,24 @@
+<div class="row"  style="border:1px solid gainsboro; height: 230px;margin: 5px 0">
+    <div class="col-sm-12" style="background: #eee;border-bottom: 2px solid grey">
+        <ul class="float-left">
+            <li>姓名：{{ data.name }}</li>
+            <li>{{ data.tasks.length }}个任务变动</li>
+            <li>{{ data.descriptionNum }}个描述</li>
+            <li> <button class="btn btn-default btn-info">修改</button></li>
+        </ul>
+    </div>
+    <div class="col-sm-12">
+        <div class="table-responsive">
+            <table class="table">
+                <tbody>
+                <tr ng-repeat="task in data.tasks track by $index">
+                    <td>任务：{{ data.name }}</td>
+                    <td>进度：{{ data.schedule }}</td>
+                    <td>工时：{{ data.manHour }}</td>
+                </tr>
+                <tr>描述：{{ data.descriptions }}</tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,24 +1,49 @@
 
 <div class="row">
     <div class="col-sm-6" style="margin-top: 30px">
-        <ul class="nav nav-tabs" >
-            <li role="presentation"><a href="#">6.20-6.24</a></li>
-            <li role="presentation" class="active"><a href="#">6.27-7.1</a></li>
-            <li role="presentation"><a href="#">7.1-7.5</a></li>
-            <li role="presentation"><a href="#">本周</a></li>
+        <ul class="nav nav-tabs my-tab">
+            <li class=" my-tab-week" role="presentation" ng-repeat="week in vm.weekDate" ng-class="{'active':$index==vm.weekTagIndex}"><a ng-click="vm.changeWeekTag($index)">{{ week }}</a></li>
+            <li class=" my-tab-week" role="presentation" ng-click="vm.changeWeekTag('week')" ng-class="{'active':vm.weekTagIndex=='week'}"><a>本周</a></li>
         </ul>
     </div>
     <div class="col-sm-6">
-        <span class="glyphicon glyphicon-calendar" style="font-size: 30px;margin-top: 13px"></span>
-    </div>
-    <div class="col-sm-12" style="height: 500px;border:1px solid gainsboro">
-
-        <div class="row">
-            <div class="col-sm-6" style="border:1px solid gainsboro; height: 230px"></div>
-            <div class="col-sm-6" style="border:1px solid gainsboro; height: 230px"></div>
-            <div class="col-sm-6" style="border:1px solid gainsboro; height: 230px"></div>
+        <div class="col-sm-1">
+            <div class="input-group date form_date" id="data_week" data-link-format="yyyy-ww-dd" data-data-format="yyyy-ww-dd">
+                <input class="form-control" size="16" type="text" value="" readonly="" style="display: none" ng-model="vm.weekdate">
+                <span class="input-group-addon" style="background: #fff;border: none"><span class="glyphicon glyphicon-calendar" style="font-size: 30px;margin-top: 13px" choice-week></span></span>
+            </div>
         </div>
     </div>
+    <div class="col-sm-12" style="height: 540px;border:1px solid gainsboro ;overflow: hidden">
+
+        <div class="row">
+            <div ng-repeat="item in vm.weekDaily" class="col-sm-4" task-page data="item"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-sm-offset-5">
+                <nav>
+                    <ul class="pagination pagination-sm" style="margin: -7px 0">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 

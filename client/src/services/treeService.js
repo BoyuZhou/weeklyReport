@@ -31,7 +31,13 @@ mainModule.service('treeService', function(){
     };
 
     this.tree.changeName = function (target) {
-        $(target).parent().parent().find('div').attr('contenteditable', 'true');
+        $(target).parent().parent().find('div').attr('contenteditable', 'true').focus().css({'border':'1px solid #ddd','background':'#eee'}).bind('blur', function(){
+            $(this).css({'border':'1px solid #fff','background':'#fff'}).attr('contenteditable', 'false');
+        }).keydown(function(){
+               //$(this).html("");
+            });
+
+
     };
 
     this.tree.addNode = function (node) {
