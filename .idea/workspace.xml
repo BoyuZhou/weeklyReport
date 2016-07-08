@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54d15aa4-3ddc-44fe-8883-ca5e0ddf23e6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/view/distribution.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/template/dtaskTemplate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/view/modified.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/template/modifiedTemplate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/directives/taskDirective.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/filters/taskFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/template/ttaskTemplate.html" />
-      <change type="DELETED" beforePath="C:\Users\guzi\Desktop\weeklyReport\client\src\directives\tree2Directive.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/view/promp/changePassword.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/view/promp/changeWeekTask.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/view/departmentDay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/view/departmentWeek.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/view/promp/descriptions.html" />
       <change type="DELETED" beforePath="C:\Users\guzi\Desktop\weeklyReport\client\src\index.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\guzi\Desktop\weeklyReport\client\src\template\dailypaper.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\guzi\Desktop\weeklyReport\client\src\template\department.html" afterPath="" />
@@ -23,7 +20,6 @@
       <change type="DELETED" beforePath="C:\Users\guzi\Desktop\weeklyReport\client\src\template\personal_data.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\guzi\Desktop\weeklyReport\client\src\template\querydailypaper.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\guzi\Desktop\weeklyReport\client\src\template\task.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\guzi\Desktop\weeklyReport\client\src\template\taskTemolate.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\guzi\Desktop\weeklyReport\client\src\template\team.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\guzi\Desktop\weeklyReport\client\src\template\user.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\guzi\Desktop\weeklyReport\client\src\template\writetask.html" afterPath="" />
@@ -36,20 +32,29 @@
       <change type="DELETED" beforePath="C:\Users\guzi\Desktop\weeklyReport\client\src\view\querydailypaper.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\guzi\Desktop\weeklyReport\client\src\view\task.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\guzi\Desktop\weeklyReport\client\src\view\team.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/view/promp/addLimit.html" afterPath="$PROJECT_DIR$/client/src/view/promp/addLimit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/view/promp/changeInfo.html" afterPath="$PROJECT_DIR$/client/src/view/promp/changeInfo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/view/promp/changeLimitInfo.html" afterPath="$PROJECT_DIR$/client/src/view/promp/changeLimitInfo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/view/promp/details.html" afterPath="$PROJECT_DIR$/client/src/view/promp/details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/template/dtaskTemplate.html" afterPath="$PROJECT_DIR$/client/src/template/dtaskTemplate.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/view/home.html" afterPath="$PROJECT_DIR$/client/src/view/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/directives/homeComponent.js" afterPath="$PROJECT_DIR$/client/src/directives/homeComponent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/index.html" afterPath="$PROJECT_DIR$/client/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/controllers/homeController.js" afterPath="$PROJECT_DIR$/client/src/controllers/homeController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/css/layout.css" afterPath="$PROJECT_DIR$/client/src/css/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/services/limitService.js" afterPath="$PROJECT_DIR$/client/src/services/limitService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/view/promp/limitGroup.html" afterPath="$PROJECT_DIR$/client/src/view/promp/limitGroup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/view/promp/limitInfo.html" afterPath="$PROJECT_DIR$/client/src/view/promp/limitInfo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/services/mainService.js" afterPath="$PROJECT_DIR$/client/src/services/mainService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/template/modifiedTemplate.html" afterPath="$PROJECT_DIR$/client/src/template/modifiedTemplate.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/config/router.js" afterPath="$PROJECT_DIR$/client/src/config/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/controllers/taskController.js" afterPath="$PROJECT_DIR$/client/src/controllers/taskController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/directives/taskDirective.js" afterPath="$PROJECT_DIR$/client/src/directives/taskDirective.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/filters/taskFilter.js" afterPath="$PROJECT_DIR$/client/src/filters/taskFilter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/view/teamDay.html" afterPath="$PROJECT_DIR$/client/src/view/teamDay.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/view/teamWeek.html" afterPath="$PROJECT_DIR$/client/src/view/teamWeek.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/services/treeService.js" afterPath="$PROJECT_DIR$/client/src/services/treeService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/services/userService.js" afterPath="$PROJECT_DIR$/client/src/services/userService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/template/ttaskTemplate.html" afterPath="$PROJECT_DIR$/client/src/template/ttaskTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/view/promp/userInfo.html" afterPath="$PROJECT_DIR$/client/src/view/promp/userInfo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/view/writetask.html" afterPath="$PROJECT_DIR$/client/src/view/writetask.html" />
     </list>
     <ignored path="weeklyReport.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,121 +75,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/view/user.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="21.571428">
-              <caret line="4" column="31" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tableTemplate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/template/tableTemplate.html">
+      <file leaf-file-name="addLimit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/view/promp/addLimit.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-3.7142856">
-              <caret line="5" column="126" selection-start-line="5" selection-start-column="119" selection-end-line="5" selection-end-column="126" />
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="teamDay.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/view/teamDay.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.37143">
-              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="treeService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/services/treeService.js">
+      <file leaf-file-name="homeController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/controllers/homeController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+              <caret line="170" column="36" selection-start-line="170" selection-start-column="36" selection-end-line="170" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/directives/homeComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="77" selection-start-line="45" selection-start-column="77" selection-end-line="45" selection-end-column="77" />
-              <folding>
-                <marker date="1467882437813" expanded="true" signature="255:751" placeholder="..." />
-                <marker date="1467882437813" expanded="true" signature="283:341" placeholder="..." />
-                <marker date="1467882437813" expanded="true" signature="387:702" placeholder="..." />
-                <marker date="1467882437813" expanded="false" signature="445:461" placeholder="..." />
-                <marker date="1467882437813" expanded="true" signature="462:690" placeholder="..." />
-                <marker date="1467882437813" expanded="true" signature="564:678" placeholder="..." />
-                <marker date="1467882437813" expanded="true" signature="616:665" placeholder="..." />
-                <marker date="1467882437813" expanded="true" signature="727:739" placeholder="..." />
-                <marker date="1467882437813" expanded="true" signature="1530:1845" placeholder="..." />
-                <marker date="1467882437813" expanded="true" signature="1618:1672" placeholder="..." />
-                <marker date="1467882437813" expanded="false" signature="1741:1753" placeholder="..." />
-                <marker date="1467882437813" expanded="true" signature="1795:1820" placeholder="..." />
-                <marker date="1467882437813" expanded="true" signature="2101:2369" placeholder="..." />
-                <marker date="1467882437813" expanded="true" signature="2145:2357" placeholder="..." />
-                <marker date="1467882437813" expanded="true" signature="2175:2345" placeholder="..." />
-                <marker date="1467882437813" expanded="true" signature="2253:2333" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/services/userService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="56" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="distribution.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/view/distribution.html">
+      <file leaf-file-name="changePassword.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/view/promp/changePassword.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.33766234">
-              <caret line="39" column="91" selection-start-line="39" selection-start-column="91" selection-end-line="39" selection-end-column="91" />
+              <caret line="5" column="214" selection-start-line="5" selection-start-column="214" selection-end-line="5" selection-end-column="214" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="taskController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/controllers/taskController.js">
+      <file leaf-file-name="limitGroup.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/view/promp/limitGroup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="597" column="18" selection-start-line="597" selection-start-column="18" selection-end-line="597" selection-end-column="18" />
+            <state vertical-scroll-proportion="-0.74285716">
+              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
               <folding>
-                <element signature="e#144#5514#0" expanded="false" />
-                <element signature="e#5794#11164#0" expanded="false" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="limitService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/services/limitService.js">
+      <file leaf-file-name="changeInfo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/view/promp/changeInfo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/css/layout.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+              <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ttaskTemplate.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/template/ttaskTemplate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.2857143">
+              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
               <folding>
-                <element signature="e#87#515#0" expanded="false" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -194,7 +158,17 @@
         <entry file="file://$PROJECT_DIR$/client/src/directives/taskDirective.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="74" selection-start-line="48" selection-start-column="11" selection-end-line="62" selection-end-column="74" />
+              <caret line="97" column="21" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="changeWeekTask.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/view/promp/changeWeekTask.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.457143">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -217,57 +191,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/src/view/userpage.html" />
-        <option value="$PROJECT_DIR$/client/src/view/personal.html" />
-        <option value="$PROJECT_DIR$/client/src/directives/form2Directive.js" />
-        <option value="$PROJECT_DIR$/client/src/framework/zTree_v3/css/zTreeStyle/zTreeStyle.css" />
-        <option value="$PROJECT_DIR$/client/src/view/addUser.html" />
-        <option value="$PROJECT_DIR$/client/src/filters/userFilters.js" />
         <option value="$PROJECT_DIR$/client/src/directives/tree2Directive.js" />
         <option value="$PROJECT_DIR$/client/src/directives/formDirective.js" />
         <option value="$PROJECT_DIR$/client/src/template/formTemplate.html" />
         <option value="$PROJECT_DIR$/client/src/services/limitFactory.js" />
         <option value="$PROJECT_DIR$/client/src/framework/sb-admin-2.css" />
         <option value="$PROJECT_DIR$/client/src/services/userFactory.js" />
-        <option value="$PROJECT_DIR$/client/src/view/promp/details.html" />
         <option value="$PROJECT_DIR$/client/src/controllers/userController.js" />
-        <option value="$PROJECT_DIR$/client/src/view/promp/userInfo.html" />
         <option value="$PROJECT_DIR$/client/src/directives/userDirective.js" />
         <option value="$PROJECT_DIR$/client/src/view/user.html" />
         <option value="$PROJECT_DIR$/client/src/directives/tableDirective.js" />
-        <option value="$PROJECT_DIR$/client/src/view/promp/changeInfo.html" />
         <option value="$PROJECT_DIR$/client/src/controllers/limitController.js" />
         <option value="$PROJECT_DIR$/client/src/view/limit.html" />
-        <option value="$PROJECT_DIR$/client/src/view/promp/limitInfo.html" />
-        <option value="$PROJECT_DIR$/client/src/view/promp/changeLimitInfo.html" />
-        <option value="$PROJECT_DIR$/client/src/services/mainService.js" />
         <option value="$PROJECT_DIR$/client/src/view/promp/limit.html" />
-        <option value="$PROJECT_DIR$/client/src/controllers/homeController.js" />
-        <option value="$PROJECT_DIR$/client/src/view/promp/limitGroup.html" />
-        <option value="$PROJECT_DIR$/client/src/view/promp/addLimit.html" />
         <option value="$PROJECT_DIR$/client/src/view/workbench.html" />
         <option value="$PROJECT_DIR$/client/src/template/taskTemolate.html" />
         <option value="$PROJECT_DIR$/client/src/template/taskTemplate.html" />
         <option value="$PROJECT_DIR$/client/src/template/tableTemplate.html" />
         <option value="$PROJECT_DIR$/client/src/index.html" />
-        <option value="$PROJECT_DIR$/client/src/filters/taskFilter.js" />
-        <option value="$PROJECT_DIR$/client/src/view/teamWeek.html" />
-        <option value="$PROJECT_DIR$/client/src/template/ttaskTemplate.html" />
         <option value="$PROJECT_DIR$/client/src/template/modified.html" />
-        <option value="$PROJECT_DIR$/client/src/directives/taskDirective.js" />
         <option value="$PROJECT_DIR$/client/src/view/modified.html" />
-        <option value="$PROJECT_DIR$/client/src/template/modifiedTemplate.html" />
-        <option value="$PROJECT_DIR$/client/src/view/home.html" />
-        <option value="$PROJECT_DIR$/client/src/css/layout.css" />
         <option value="$PROJECT_DIR$/client/src/services/treeService.js" />
         <option value="$PROJECT_DIR$/client/src/services/limitService.js" />
-        <option value="$PROJECT_DIR$/client/src/directives/homeComponent.js" />
         <option value="$PROJECT_DIR$/client/src/services/userService.js" />
         <option value="$PROJECT_DIR$/client/src/view/writetask.html" />
-        <option value="$PROJECT_DIR$/client/src/view/teamDay.html" />
-        <option value="$PROJECT_DIR$/client/src/config/router.js" />
-        <option value="$PROJECT_DIR$/client/src/controllers/taskController.js" />
         <option value="$PROJECT_DIR$/client/src/view/distribution.html" />
+        <option value="$PROJECT_DIR$/client/src/config/router.js" />
+        <option value="$PROJECT_DIR$/client/src/view/home.html" />
+        <option value="$PROJECT_DIR$/client/src/view/departmentWeek.html" />
+        <option value="$PROJECT_DIR$/client/src/view/departmentDay.html" />
+        <option value="$PROJECT_DIR$/client/src/view/teamWeek.html" />
+        <option value="$PROJECT_DIR$/client/src/view/teamDay.html" />
+        <option value="$PROJECT_DIR$/client/src/template/dtaskTemplate.html" />
+        <option value="$PROJECT_DIR$/client/src/view/promp/descriptions.html" />
+        <option value="$PROJECT_DIR$/client/src/filters/taskFilter.js" />
+        <option value="$PROJECT_DIR$/client/src/services/mainService.js" />
+        <option value="$PROJECT_DIR$/client/src/controllers/taskController.js" />
+        <option value="$PROJECT_DIR$/client/src/template/ttaskTemplate.html" />
+        <option value="$PROJECT_DIR$/client/src/template/modifiedTemplate.html" />
+        <option value="$PROJECT_DIR$/client/src/directives/taskDirective.js" />
+        <option value="$PROJECT_DIR$/client/src/view/promp/changeWeekTask.html" />
+        <option value="$PROJECT_DIR$/client/src/css/layout.css" />
+        <option value="$PROJECT_DIR$/client/src/directives/homeComponent.js" />
+        <option value="$PROJECT_DIR$/client/src/view/promp/details.html" />
+        <option value="$PROJECT_DIR$/client/src/view/promp/userInfo.html" />
+        <option value="$PROJECT_DIR$/client/src/view/promp/changeInfo.html" />
+        <option value="$PROJECT_DIR$/client/src/view/promp/limitInfo.html" />
+        <option value="$PROJECT_DIR$/client/src/view/promp/changeLimitInfo.html" />
+        <option value="$PROJECT_DIR$/client/src/view/promp/addLimit.html" />
+        <option value="$PROJECT_DIR$/client/src/view/promp/limitGroup.html" />
+        <option value="$PROJECT_DIR$/client/src/view/changePassword.html" />
+        <option value="$PROJECT_DIR$/client/src/controllers/homeController.js" />
       </list>
     </option>
   </component>
@@ -280,7 +254,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1377" />
+    <option name="width" value="1370" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -306,6 +280,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -396,6 +371,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="promp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weeklyReport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weeklyReport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -440,7 +441,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
+              <option name="myItemId" value="filters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -512,7 +513,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -520,7 +520,7 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../component" />
+    <property name="last_opened_file_path" value="D:/xcj/html/RM_DMA_ES_FU_001" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="recentsLimit" value="5" />
@@ -536,6 +536,7 @@
       <recent name="C:\Users\guzi\Desktop" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\guzi\Desktop\weeklyReport\client\src\view\promp" />
       <recent name="C:\Users\guzi\Desktop\weeklyReport\client\src\config" />
       <recent name="C:\Users\guzi\Desktop\weeklyReport\client\src\images" />
       <recent name="C:\Users\guzi\Desktop\weeklyReport\client\src\framework" />
@@ -618,13 +619,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1377" height="735" extended-state="1" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="1370" height="735" extended-state="1" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23674384" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23648648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -663,38 +665,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/images/file/diy/1_close.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/images/1_open.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/framework/zTree_v3/js/jquery.ztree.exedit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.202402">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/framework/zTree_v3/js/jquery.ztree.excheck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.67067">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/directives/formDirective.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/framework/sb-admin-2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5818815">
@@ -731,24 +701,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/promp/details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9714286">
-          <caret line="4" column="113" selection-start-line="4" selection-start-column="113" selection-end-line="4" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/directives/userDirective.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/promp/userInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="44" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -766,75 +722,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/promp/changeInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.048237476">
-          <caret line="0" column="84" selection-start-line="0" selection-start-column="84" selection-end-line="0" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/services/mainService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/promp/limit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.857142">
-          <caret line="20" column="74" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/promp/changeLimitInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="103" selection-start-line="0" selection-start-column="103" selection-end-line="0" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/promp/limitInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="35" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/controllers/homeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/personal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14471243">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/promp/limitGroup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33766234">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/promp/addLimit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/template/formTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="85" selection-start-line="12" selection-start-column="85" selection-end-line="12" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -842,15 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="100" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -858,14 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.7665505">
           <caret line="5" column="14" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3142858">
-          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -878,98 +752,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/filters/taskFilter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="68" selection-start-line="85" selection-start-column="68" selection-end-line="85" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/template/dtaskTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53061223">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/template/ttaskTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.457143">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/template/modifiedTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2285714">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7717996">
-          <caret line="148" column="49" selection-start-line="148" selection-start-column="49" selection-end-line="148" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/teamWeek.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33766234">
-          <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/modified.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57884973">
-          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/css/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/controllers/userController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -977,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,7 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="21.571428">
           <caret line="4" column="31" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,7 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.7142856">
           <caret line="5" column="126" selection-start-line="5" selection-start-column="119" selection-end-line="5" selection-end-column="126" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1019,7 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,59 +813,142 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/distribution.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="91" selection-start-line="39" selection-start-column="91" selection-end-line="39" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/config/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="22.22857">
+          <caret line="158" column="28" selection-start-line="158" selection-start-column="28" selection-end-line="158" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/view/teamDay.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.37143">
-          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        <state vertical-scroll-proportion="-0.74285716">
+          <caret line="25" column="113" selection-start-line="25" selection-start-column="113" selection-end-line="25" selection-end-column="113" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/template/dtaskTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33766234">
+          <caret line="18" column="128" selection-start-line="18" selection-start-column="128" selection-end-line="18" selection-end-column="128" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/departmentWeek.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="17.285715">
+          <caret line="19" column="88" selection-start-line="19" selection-start-column="88" selection-end-line="19" selection-end-column="88" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0285714">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/departmentDay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.4118738">
+          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/promp/descriptions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.9428573">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/modified.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.74285716">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/filters/taskFilter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="103" column="11" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/teamWeek.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.74285716">
+          <caret line="19" column="104" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/config/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63414633">
-          <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/directives/homeComponent.js">
+    <entry file="file://$PROJECT_DIR$/client/src/services/mainService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="77" selection-start-line="45" selection-start-column="77" selection-end-line="45" selection-end-column="77" />
-          <folding>
-            <marker date="1467882437813" expanded="true" signature="255:751" placeholder="..." />
-            <marker date="1467882437813" expanded="true" signature="283:341" placeholder="..." />
-            <marker date="1467882437813" expanded="true" signature="387:702" placeholder="..." />
-            <marker date="1467882437813" expanded="false" signature="445:461" placeholder="..." />
-            <marker date="1467882437813" expanded="true" signature="462:690" placeholder="..." />
-            <marker date="1467882437813" expanded="true" signature="564:678" placeholder="..." />
-            <marker date="1467882437813" expanded="true" signature="616:665" placeholder="..." />
-            <marker date="1467882437813" expanded="true" signature="727:739" placeholder="..." />
-            <marker date="1467882437813" expanded="true" signature="1530:1845" placeholder="..." />
-            <marker date="1467882437813" expanded="true" signature="1618:1672" placeholder="..." />
-            <marker date="1467882437813" expanded="false" signature="1741:1753" placeholder="..." />
-            <marker date="1467882437813" expanded="true" signature="1795:1820" placeholder="..." />
-            <marker date="1467882437813" expanded="true" signature="2101:2369" placeholder="..." />
-            <marker date="1467882437813" expanded="true" signature="2145:2357" placeholder="..." />
-            <marker date="1467882437813" expanded="true" signature="2175:2345" placeholder="..." />
-            <marker date="1467882437813" expanded="true" signature="2253:2333" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/directives/taskDirective.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="74" selection-start-line="48" selection-start-column="11" selection-end-line="62" selection-end-column="74" />
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1091,18 +956,179 @@
     <entry file="file://$PROJECT_DIR$/client/src/controllers/taskController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="597" column="18" selection-start-line="597" selection-start-column="18" selection-end-line="597" selection-end-column="18" />
+          <caret line="705" column="4" selection-start-line="705" selection-start-column="4" selection-end-line="705" selection-end-column="4" />
           <folding>
-            <element signature="e#144#5514#0" expanded="false" />
-            <element signature="e#5794#11164#0" expanded="false" />
+            <element signature="e#190#5560#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/distribution.html">
+    <entry file="file://$PROJECT_DIR$/client/src/view/personal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2285714">
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/template/modifiedTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7714286">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/directives/taskDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="21" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/promp/changeWeekTask.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.457143">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/css/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/template/ttaskTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2857143">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/promp/userInfo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33766234">
-          <caret line="39" column="91" selection-start-line="39" selection-start-column="91" selection-end-line="39" selection-end-column="91" />
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/promp/limitInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.9428573">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/promp/limit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.012987">
+          <caret line="20" column="74" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/promp/changeLimitInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57884973">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/promp/details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/directives/homeComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.4006968">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+          <folding>
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1467969216908" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/promp/addLimit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7142856">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/promp/limitGroup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.74285716">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/promp/changeInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/controllers/homeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="170" column="36" selection-start-line="170" selection-start-column="36" selection-end-line="170" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/promp/changePassword.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33766234">
+          <caret line="5" column="214" selection-start-line="5" selection-start-column="214" selection-end-line="5" selection-end-column="214" />
           <folding />
         </state>
       </provider>

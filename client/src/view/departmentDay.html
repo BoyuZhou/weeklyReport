@@ -20,10 +20,11 @@
 
         </div>
     </div>
+
     <div class="col-sm-12" style="padding: 10px;border:1px solid gainsboro ;overflow: hidden">
 
         <div class="row">
-            <div ng-repeat="item in vm.teamDaily" class="col-sm-4" team-task-page data="item" type="false"></div>
+            <div ng-repeat="item in vm.dayDaily" class="col-sm-4" department-task-page data="item"></div>
         </div>
         <div class="row">
             <div class="col-sm-3 col-sm-offset-5">
@@ -46,14 +47,6 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2" ng-show="vm.modifiedBtnState">
-                <button class="btn btn-default btn-info btn-block" ui-sref="home.modified">修改</button>
-            </div>
-            <div class="col-sm-2" ng-show="vm.checkBtnState">
-                <button class="btn btn-default btn-info btn-block" ng-bind="vm.checkBtn" ng-click="vm.check()"></button>
             </div>
         </div>
     </div>

@@ -46,8 +46,8 @@ mainModule.directive('xcjPromp', function ($timeout, $rootScope) {
                 $('.promp').css({'max-width':'500px', marginLeft: '-250px'});
             }
         },
-        template:'<div class="container promp"  id="promp">\
-        <div ng-click="closePromp()"><span class="glyphicon glyphicon-remove" style="position: absolute; right: 10px;top: 10px;z-index: 10;"></span></div>\
+        template:'<div class="promp"  id="promp">\
+        <div ng-click="closePromp()"><span class="glyphicon glyphicon-remove" style="position: absolute; right: 10px;top: 20px;z-index: 10;"></span></div>\
                  <div id="clude" class="row" style="padding: 5px" ng-include src="vm.mainService.prompSrc">\
                  </div>\
                  </div>'

@@ -46,6 +46,16 @@ mainModule.config(function($stateProvider, $urlRouterProvider){
             templateUrl: 'view/teamWeek.html',
             controller: 'taskController as vm'
         })
+        .state('home.departmentDay', {
+            url: '/departmentDay',
+            templateUrl: 'view/departmentDay.html',
+            controller: 'taskController as vm'
+        })
+        .state('home.departmentWeek', {
+            url: '/departmentWeek',
+            templateUrl: 'view/departmentWeek.html',
+            controller: 'taskController as vm'
+        })
         .state('home.modified', {
             url: '/modified',
             templateUrl: 'view/modified.html',

@@ -1,24 +1,28 @@
-<div class="row"  style="border:1px solid gainsboro; height: 230px;margin: 5px 0">
-    <div class="col-sm-12" style="background: #eee;border-bottom: 2px solid grey">
-        <ul class="float-left">
-            <li>{{ data.name }}团队</li>
-            <li>{{ data.tasks.length }}个任务</li>
-            <li>{{ data.descriptionNum }}个描述</li>
-            <li>{{ data.manHour }}工时</li>
-            <li>{{ data.state }}审核</li>
-        </ul>
-    </div>
-    <div class="col-sm-12">
-        <div class="table-responsive">
-            <table class="table">
-                <tbody>
-                <tr ng-repeat="task in data.tasks track by $index">
-                    <td>任务：{{ data.name }}</td>
-                    <td>进度：{{ data.schedule }}</td>
-                    <td>工时：{{ data.manHour }}</td>
-                </tr>
-                </tbody>
-            </table>
+<div class="row"  style="margin: 5px 0">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div>
+                <span  style="display: inline-block;width: 150px;cursor: pointer;"><span style="font-size: 20px">{{ data.name }}团队</span></span>
+                <span  style="display: inline-block;width: 90px"><span ng-show="data.state"><span class="fa fa-bookmark"></span>已</span><span ng-show="!data.state"><span class="fa fa-bookmark-o"></span>未</span>审核</span>
+            </div>
+            <div>
+                <span  style="display: inline-block;width: 90px"><span class="fa fa-clock-o"></span>{{ data.manHour }}工时</span>
+                <span  style="display: inline-block;width: 90px"><span class="fa fa-tasks"></span>{{ data.tasks.length }}个任务</span>
+                <span  style="display: inline-block;width: 90px"><span class="fa fa-file-text-o"></span>{{ data.descriptionNum }}个描述</span>
+
+            </div>
+
+
+        </div>
+        <div class="panel-body">
+            <div>
+                <div ng-repeat="task in data.tasks track by $index" style="border-bottom: 1px dashed #bce8f1;margin: 5px auto;">
+                        <span><span class="fa fa-book"></span>任务：{{ task.name }}</span>
+                        <span><span class="fa fa-flask"></span>进度：{{ task.schedule }}</span>
+                        <span><span class="fa fa-clock-o"></span>工时：{{ task.manHour }}</span>
+                </div>
+            </div>
         </div>
     </div>
+
 </div>

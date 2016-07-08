@@ -167,10 +167,8 @@ mainModule.controller('homeController', ['$scope', '$state', '$compile', 'mainSe
     $('#side-menu').metisMenu();
 
     vm.changePassword = function () {
-        var html = '<div class="form-group col-lg-10 col-lg-offset-1"><label>新密码</label><input class="form-control"> </div><div class="form-group col-lg-10 col-lg-offset-1"><label>再次输入</label><input class="form-control"></div>';
+        vm.mainService.prompSrc = 'view/promp/changePassword.html';
         vm.mainService.promp = true;
-        $('#clude').html($compile(html)($scope));
-
     };
 
 

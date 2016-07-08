@@ -1,4 +1,4 @@
-mainModule.controller('taskController', ['$scope', '$filter', function ($scope, $filter) {
+mainModule.controller('taskController', ['$scope', '$filter', '$state', 'mainService', function ($scope, $filter, $state, mainService) {
     var vm = this;
 
     //团队周报模拟数据
@@ -220,7 +220,7 @@ mainModule.controller('taskController', ['$scope', '$filter', function ($scope, 
             name: 'java',
             descriptionNum: '20',
             manHour: '400',
-            state: '已',
+            state: false,
             tasks: [
                 {
                     name: '测试平台',
@@ -253,7 +253,7 @@ mainModule.controller('taskController', ['$scope', '$filter', function ($scope, 
             name: 'java',
             descriptionNum: '20',
             manHour: '400',
-            state: '已',
+            state: true,
             tasks: [
                 {
                     name: '测试平台',
@@ -286,7 +286,7 @@ mainModule.controller('taskController', ['$scope', '$filter', function ($scope, 
             name: 'java',
             descriptionNum: '20',
             manHour: '400',
-            state: '已',
+            state: false,
             tasks: [
                 {
                     name: '测试平台',
@@ -319,7 +319,7 @@ mainModule.controller('taskController', ['$scope', '$filter', function ($scope, 
             name: 'java',
             descriptionNum: '20',
             manHour: '400',
-            state: '已',
+            state: true,
             tasks: [
                 {
                     name: '测试平台',
@@ -352,7 +352,7 @@ mainModule.controller('taskController', ['$scope', '$filter', function ($scope, 
             name: 'java',
             descriptionNum: '20',
             manHour: '400',
-            state: '已',
+            state: false,
             tasks: [
                 {
                     name: '测试平台',
@@ -385,7 +385,7 @@ mainModule.controller('taskController', ['$scope', '$filter', function ($scope, 
             name: 'java',
             descriptionNum: '20',
             manHour: '400',
-            state: '已',
+            state: false,
             tasks: [
                 {
                     name: '测试平台',
@@ -569,6 +569,146 @@ mainModule.controller('taskController', ['$scope', '$filter', function ($scope, 
             ]
         }
     };
+    vm.teamWeekDaily = {
+        user1: {
+            name: '周博宇',
+            descriptionNum: '20',
+            descriptions:'hahahahaha',
+            tasks: [
+                {
+                    name: '测试平台',
+                    schedule: '20%',
+                    manHour: '20'
+                },
+                {
+                    name: 'demo平台',
+                    schedule: '20%',
+                    manHour: '20'
+                },
+                {
+                    name: '内容平台',
+                    schedule: '20%',
+                    manHour: '20'
+                }
+            ]
+        },
+        user2: {
+            name: '周博宇',
+            descriptionNum: '20',
+            tasks: [
+                {
+                    name: '测试平台',
+                    schedule: '20%',
+                    manHour: '20'
+                },
+                {
+                    name: 'demo平台',
+                    schedule: '20%',
+                    manHour: '20'
+                },
+                {
+                    name: '内容平台',
+                    schedule: '20%',
+                    manHour: '20'
+                }
+            ]
+        },
+        user3: {
+            name: '周博宇',
+            descriptionNum: '20',
+            tasks: [
+                {
+                    name: '测试平台',
+                    schedule: '20%',
+                    manHour: '20'
+                },
+                {
+                    name: 'demo平台',
+                    schedule: '20%',
+                    manHour: '20'
+                },
+                {
+                    name: '内容平台',
+                    schedule: '20%',
+                    manHour: '20'
+                }
+            ]
+        },
+        user4: {
+            name: '周博宇',
+            descriptionNum: '20',
+            tasks: [
+                {
+                    name: '测试平台',
+                    schedule: '20%',
+                    manHour: '20'
+                },
+                {
+                    name: 'demo平台',
+                    schedule: '20%',
+                    manHour: '20'
+                },
+                {
+                    name: '内容平台',
+                    schedule: '20%',
+                    manHour: '20'
+                }
+            ]
+        },
+        user5: {
+            name: '周博宇',
+            descriptionNum: '20',
+            tasks: [
+                {
+                    name: '测试平台',
+                    schedule: '20%',
+                    manHour: '20'
+                },
+                {
+                    name: 'demo平台',
+                    schedule: '20%',
+                    manHour: '20'
+                },
+                {
+                    name: '内容平台',
+                    schedule: '20%',
+                    manHour: '20'
+                }
+            ]
+        },
+        user6: {
+            name: '周博宇',
+            descriptionNum: '20',
+            tasks: [
+                {
+                    name: '测试平台',
+                    schedule: '20%',
+                    manHour: '20'
+                },
+                {
+                    name: 'demo平台',
+                    schedule: '20%',
+                    manHour: '20'
+                },
+                {
+                    name: '内容平台',
+                    schedule: '20%',
+                    manHour: '20'
+                }
+            ]
+        }
+    };
+
+    //点击团队名称跳页
+    vm.enterTeamPage = function (name, type) {
+
+    };
+    vm.changeTeamWeekDaily = function (data){
+        console.log(111);
+        mainService.modifterData = data;
+        mainService.prompSrc = 'view/promp/changeWeekTask.html';
+        mainService.promp = true;
+    }
 }]);
 
 

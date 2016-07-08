@@ -100,3 +100,10 @@ mainModule.filter('xcjFormatDate', function(){
         return ary;
     }
 });
+
+//限制内容字数或条数
+mainModule.filter('limitWord', function () {
+   return function (input, size) {
+
+   }
+});

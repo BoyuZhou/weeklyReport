@@ -1,19 +1,19 @@
-<div class="row"  style="border:1px solid gainsboro; padding: 5px;margin: 5px 0">
-    <div class="col-sm-12" style="background: #eee;border-bottom: 2px solid grey">
-        <ul class="float-left">
-            <li style="margin-left: 20px">姓名：{{ data.name }}</li>
-            <li style="margin-left: 20px">{{ data.tasks.length }}个任务变动</li>
-            <li style="margin-left: 20px">{{ data.descriptionNum }}个描述</li>
-        </ul>
+<div class="row" style="margin: 5px 10px">
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+
+            <span style="margin-left: 20px"><span class="fa fa-user"></span>{{ data.name }}</span>
+            <span style="margin-left: 20px"><span class="fa fa-tasks"></span>{{ data.tasks.length }}个任务变动</span>
+            <span style="margin-left: 20px"><span class="fa fa-file-text-o"></span>{{ data.descriptionNum }}个描述</span>
+
     </div>
-    <div class="col-sm-12">
-        <div class="table-responsive">
-            <table class="table modified-table">
-                <tbody>
-                <tr ng-repeat="task in data.tasks track by $index" class="row">
-                    <td>
+    <div class="panel-body">
+
+                <div ng-repeat="task in data.tasks track by $index" class="row" style="margin: 8px 10px">
+                    <div>
                         <form class="form-inline">
-                            <div>任务：{{ task.name }}</div>
+                            <div style="display: inline-block;">任务：{{ task.name }}</div>
                         <div class="form-group">
                             <label for="exampleInputName2">进度：10-></label>
                             <select class="form-control" name="" id="exampleInputName2"  ng-model-options="task.schedule">
@@ -34,19 +34,23 @@
                             <input type="text" class="form-control" id="exampleInputEmail2" ng-model="task.manHour" size="3">
                         </div>
                     </form>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+                    </div>
+                </div>
+
             <div class="col-sm-12">
                 <form class="form-inline">
-                    <div class="form-group">
+                    <div class="form-group col-sm-10">
                         <label style="vertical-align:top ">描述:</label>
-                        <textarea class="form-control" name="" id="" cols="40" rows="2" ng-model="data.descriptions"></textarea>
+                        <textarea class="form-control" name="" id="" cols="35" rows="2" ng-model="data.descriptions"></textarea>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn-default btn-info btn-group-sm">删除</button>
                     </div>
                 </form>
             </div>
 
         </div>
+            <div ng-show="footer" class="panel-footer" ng-transclude></div>
     </div>
+        </div>
 </div>

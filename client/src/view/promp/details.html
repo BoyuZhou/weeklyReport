@@ -1,21 +1,28 @@
-<div class="row addUser">
-    <form role="form">
-        <div class="form-group col-sm-5 col-sm-offset-1">
-            <label for="add_username">用户名</label>
-            <input type="text" id="add_username" class="form-control" ng-model="vm.add_username" placeholder="用户名"/>
-        </div>
-        <div class="form-group col-sm-5">
-            <label for="add_realname">姓名 </label>
+<div class="panel panel-info">
+    <div class="panel-heading">
+       <p>新增用户</p>
+    </div>
+    <div class="panel-body">
+        <form role="form">
+            <div class="form-group col-sm-5 col-sm-offset-1">
+                <label for="add_username">用户名</label>
+                <input type="text" id="add_username" class="form-control" ng-model="vm.add_username" placeholder="用户名"/>
+            </div>
+            <div class="form-group col-sm-5">
+                <label for="add_realname">姓名 </label>
                 <input type="text" id="add_realname" class="form-control" ng-model="vm.add_realname" placeholder="真实姓名"/>
-        </div>
-        <div class="form-group col-sm-10 col-sm-offset-1">
-            <label for="add_password">密码 </label>
-            <input type="password" class="form-control" id="add_password" placeholder="请输入6-12位数字字母及下划线" ng-model="vm.add_password">
-        </div>
-        <div class="form-group col-sm-10 col-sm-offset-1">
-            <label for="add_email">邮箱 </label>
+            </div>
+            <div class="form-group col-sm-10 col-sm-offset-1">
+                <label for="add_password">密码 </label>
+                <input type="password" class="form-control" id="add_password" placeholder="请输入6-12位数字字母及下划线" ng-model="vm.add_password">
+            </div>
+            <div class="form-group col-sm-10 col-sm-offset-1">
+                <label for="add_email">邮箱 </label>
                 <input type="email" class="form-control" id="add_email" placeholder="Email" ng-model="vm.add_email">
-        </div>
-    </form>
-
+            </div>
+        </form>
+    </div>
+    <div class="panel-footer">
+       <button class="btn btn-default btn-info center-block">确认</button>
+    </div>
 </div>

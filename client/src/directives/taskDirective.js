@@ -1,4 +1,4 @@
-mainModule.directive('taskPage', function () {
+mainModule.directive('departmentTaskPage', function () {
    return {
        restrict: 'EA',
        scope: {
@@ -9,6 +9,24 @@ mainModule.directive('taskPage', function () {
        },
        templateUrl: 'template/dtaskTemplate.html'
    }
+});
+
+mainModule.directive('teamTaskPage', function () {
+    return {
+        restrict: 'EA',
+        //scope: {
+        //    data: '=',
+        //    type: '='
+        //},
+        controller: 'taskController',
+        link: function(scope, element, attrs){
+            scope.data = scope.$eval(attrs.data);
+            scope.type = scope.$eval(attrs.type);
+//点击团队周报页面修改按钮
+
+        },
+        templateUrl: 'template/ttaskTemplate.html'
+    }
 });
 
 mainModule.directive('choiceWeek', function ($filter) {
@@ -74,11 +92,28 @@ mainModule.directive('choiceDay', function ($filter) {
 mainModule.directive('modified', function () {
    return {
        restrict: 'EA',
+       transclude: true,
        scope: {
-         data: '='
+           data: '=',
+           footer: '@'
        },
        link: function (scope,element, attrs){
+           console.log($(element).children());
        },
        templateUrl: 'template/modifiedTemplate.html'
    }
 });
+
+
+//mainModule.directive('modifter', function (mainService) {
+//    return {
+//        restrict: 'A',
+//        scope: {
+//           data: '='
+//        },
+//        link: function (scope, element, attrs) {
+//
+//
+//        }
+//    }
+//});
